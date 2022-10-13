@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DisplayGeometry {
     public static void main(String[] args) {
-        int choice = -1;
+        int choice = -1; //số gì cũng được để chạy vào vòng lặp while tru so 0
         Scanner input = new Scanner(System.in);
         while (choice != 0) {
             System.out.println("Menu");

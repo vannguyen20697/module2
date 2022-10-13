@@ -6,7 +6,7 @@ public class ReaderNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number;
-        String result = " ";
+        String result = "";
         do {
             System.out.println("Nhập số cần đọc: ");
             number = sc.nextInt();
@@ -46,11 +46,12 @@ public class ReaderNumber {
                 result += "Nine hundred";
                 break;
         }
-        if (numberOne != 0 && (numberTwo != 0 || numberThree != 0))
+        if (numberOne != 0 && (numberTwo != 0 || numberThree != 0)) {
             result += " and ";
+        }
         switch (numberTwo) {
             case 0:
-                result = "";
+                result += "";
                 break;
             case 1: {
                 switch (numberThree) {
