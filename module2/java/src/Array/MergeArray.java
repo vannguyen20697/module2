@@ -10,7 +10,7 @@ public class MergeArray {
         int[] arrayB = new int[6];
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
-            System.out.println("Nhp phan tu vao mang: ");
+            System.out.println("Nhap phan tu vao mang: ");
             index = sc.nextInt();
             arrayA[i] = index;
         }
