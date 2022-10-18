@@ -1,9 +1,9 @@
 package QuadraticEquationExercise;
 
 public class QuadraticEquation {
-    double a;
-    double b;
-    double c;
+    private double a;
+    private double b;
+    private double c;
     //constructor mặc định
     public QuadraticEquation() {
 
