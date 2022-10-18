@@ -4,12 +4,10 @@ public class QuadraticEquation {
     double a;
     double b;
     double c;
-
     //constructor mặc định
     public QuadraticEquation() {
 
     }
-
     ////constructor
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
