@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        //nhập a,b,c
         System.out.println("Nhập a: ");
-        double a = Double.parseDouble(scanner.nextLine());
+        double a = scanner.nextDouble();
         System.out.println("Nhập b: ");
-        double b = Double.parseDouble(scanner.nextLine());
+        double b = scanner.nextDouble();
         System.out.println("Nhập c: ");
-        double c = Double.parseDouble(scanner.nextLine());
+        double c = scanner.nextDouble();
+        // khởi tạo
         QuadraticEquation quadraticEquation2 = new QuadraticEquation(a, b, c);
         double delta = quadraticEquation2.getDiscriminant();
         System.out.println("Delta = " + delta);
