@@ -1,7 +1,5 @@
 package ke_thua.baitapl_loppoint;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 public class PointThreeD extends PointTwoD {
     private float z = 0.0f;
 
@@ -14,21 +12,23 @@ public class PointThreeD extends PointTwoD {
     }
 
     public float getZ() {
+
         return z;
     }
 
     public void setZ(float z) {
         this.z = z;
     }
+
     public float[] getXYZ() {
-        float[] arrayXYZ = {super.getX(),super.getY(),z};
+        float[] arrayXYZ = {super.getX(), super.getY(), z};
         return arrayXYZ;
     }
 
     public void setXYZ(float x, float y) {
         super.setX(x);
         super.setY(y);
-        this.z =  z;
+        this.z = z;
     }
 
     @Override
@@ -40,12 +40,13 @@ public class PointThreeD extends PointTwoD {
                 " and " + getXYZ();
     }
 }
+
 class MainTest {
     public static void main(String[] args) {
         PointTwoD point3D = new PointThreeD();
         System.out.println(point3D);
 
-        PointThreeD point3Test = new PointThreeD(2,4,5);
+        PointThreeD point3Test = new PointThreeD(2, 4, 5);
         System.out.println(point3Test);
 
     }
